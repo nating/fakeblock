@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="description" content="Fakeblock. The ultimate fake block.">
+    <meta name="keywords" content="fake, block, fakeblock, instrument, wood, block, sound">
+    <title>Fakeblock</title>
+    <meta property="og:image" content="./static/img/fakeblock.ico">
+    <link rel="shortcut icon" href="./static/img/fakeblock.ico" type="image/x-icon">
+    <style>html{margin:0px;padding:0px;height:100vh;overflow:hidden;}body{height:100%;overflow:hidden;background-color:black;font-family:Verdana;color:white;touch-action:manipulation;}.h-100{height:100%}.h-90{height:90%}</style>
+  </head>
+  <body>
+
+    <div class="row justify-content-center h-100 text-center">
+
+      <div class="col col-10 col-md-8 col-lg-6 align-items-center">
+        <table class="h-90">
+          <tbody>
+            <tr>
+              <td>
+                <h1>Fakeblock</h1>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img onclick="play()" class="w-100" src="./static/img/fakeblock.png" alt="A woodblock instrument.">
+              </td>
+            </tr>
+              <tr>
+                <td>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <script>
+      /* Enforce HTTPS x */
+      var loc = window.location.href+'';
+      if (loc.indexOf('http://')==0){
+          window.location.href = loc.replace('http://','https://');
+      }
+      function play(){
+        var audio = new Audio("/Users/GeoffreyNatin/Documents/GithubRepositories/fakeblock/assets/fakeblock.mp3");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
